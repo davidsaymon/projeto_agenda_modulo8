@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculando o arquivo de estilo -->
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Contatos</h1>
+
+        <!-- Formulário para adicionar novo contato -->
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone">
+
+            <button type="button" onclick="addContact()">Cadastrar</button>
+        </form>
+
+        <!-- Espaço reservado para exibir contatos -->
+        <div id="contactList">
+            <h2>Contatos</h2>
+            <ul id="contacts"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vinculando o arquivo JavaScript -->
+</body>
+</html>
